@@ -1,0 +1,138 @@
+.recent-posts {
+	color: $dark;
+	background: $background;
+
+	&__body {
+		padding: 20px 0 31px;
+
+		@media (max-width: 910px) {
+			padding: 17px 0 27px;
+		}
+	}
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		margin: 6px 0 21px;
+
+		@media (max-width: 910px) {
+			justify-content: center;
+			margin: 6px 0 20px;
+		}
+	}
+	&__title {
+		flex: 0 0 auto;
+		font-size: 22px;
+
+		@media (max-width: 910px) {
+			font-size: 18px;
+		}
+	}
+	&__link {
+		flex: 0 0 auto;
+		align-self: center;
+		font-size: 16px;
+		color: $secondry;
+
+		@media (max-width: 910px) {
+			display: none;
+		}
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: 910px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	&__cart {
+		flex: 0 1 418px;
+
+		@media (max-width: 910px) {
+			flex: 0 1 auto;
+		}
+	}
+}
+.post-cart {
+	display: inline-block;
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100%;
+	padding: 24px 25px 28px;
+	border-radius: 4px;
+	background: #fff;
+	transition: 0.5s all 0s ease;
+	box-shadow: 0 4px 10px rgba(187, 225, 250, 0.25);
+	// box-shadow: 0 4px 10px #000;
+
+
+	&__title {
+		margin: 0 0 27px 0;
+		font-size: 26px;
+		font-weight: 700;
+		line-height: 38px;
+
+		@media (max-width: 910px) {
+			margin: 0 0 11px 0;
+			font-size: 22px;
+			line-height: 30px;
+		}
+	}
+	&__data {
+		display: flex;
+		margin: 0 0 15px 0;
+		font-size: 18px;
+		line-height: 26px;
+
+		@media (max-width: 910px) {
+			margin: 0 0 15px 0;
+			font-size: 16px;
+		}
+	}
+	&__date {
+		flex: 0 0 auto;
+	}
+	&__data-break {
+		flex: 0 1 57px;
+		position: relative;
+		top: 1px;
+		left: 0;
+
+		&:after {
+			content: '';
+			display: inline-block;
+			position: relative;
+			top: 0;
+			left: 50%;
+			width: 1px;
+			height: 21px;
+			background: #000;
+
+		}
+	}
+	&__category {
+		flex: 0 0 auto;
+	}
+	&__text {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	&:hover {
+		top: -5px;
+		box-shadow: 0 9px 10px rgba(187, 225, 250, 0.25);
+		// box-shadow: 0 9px 10px #000;
+	}
+
+
+	@media (max-width: 910px) {
+		max-width: 418px;
+		padding: 13px 19px 19px;
+		margin: 0 0 17px 0;
+		&:last-child {
+			margin: 0;
+		}
+	}
+}

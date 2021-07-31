@@ -1,0 +1,50 @@
+.header {
+
+	nav {
+		margin: 26px 0 0;
+	}
+	.container {
+		max-width: 1032px+2*$container-padding;
+	}
+	&__list {
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__list li {
+		line-height: 30px;
+	}
+	&__list li a {
+		position: relative;
+		&:visited{color: #000;}
+		&:before {
+			content: attr(data-text);
+			display: inline-block;
+			position: absolute;
+			overflow: hidden;
+			height: 100%;
+			width: 0;
+			color: $primary;
+			background: #fff;
+			transition: 0.3s;
+			transition-timing-function: easy-out;
+		}
+		&:hover {
+			&:before {
+				width: 70%;
+			}
+		}
+		&:active {
+			&:before {
+				width: 100%;
+			}
+		}
+	}
+	&__item {
+		flex: 0 0 auto;
+
+		margin: 0 0 0 33px;
+
+		font-weight: 500;
+		font-size: 20px;
+	}
+}
