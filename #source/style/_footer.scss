@@ -1,0 +1,17 @@
+.footer {
+	display: flex;
+	justify-content: center;
+	padding: 58px 0 51px;
+	&__body {
+		text-align: center;
+	}
+	&__links {
+		margin: 0 0 30px 0;
+	}
+	&__link {
+		margin: 0 10px;
+	}
+	&__copyright {
+		color: $dark;
+	}
+}

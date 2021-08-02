@@ -5,10 +5,12 @@
 $primary: #FF6464;
 $secondry: #00A8CC;
 $dark: #21243D;
+$dark-blue: #142850;
 $light: #8695A4;
+$light-gray: #E0E0E0;
 $background: #EDF7FA;
 
-$container-padding: 30px;
+$container-padding: 11px;
 
 body {
 	font-family: "Heebo";
@@ -19,7 +21,6 @@ body {
 	flex-direction: column;
 	overflow: hidden;
 	min-height: 100%;
-	padding-bottom: 500px;
 }
 
 .container {
@@ -28,12 +29,18 @@ body {
 	margin: 0 auto;
 }
 
+@import "_common.scss";
 
 @import "_header.scss";
 
 .content {
+	flex: 1 0 auto;
 }
 
 @import "_main.scss";
 
 @import "_recent-posts.scss";
+
+@import "_featured-works.scss";
+
+@import "_footer.scss";

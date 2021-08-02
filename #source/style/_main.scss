@@ -44,12 +44,20 @@
 	}
 	&__link {
 		display: inline-block;
+		position: relative;
+		top: 0;
+		left: 0;
 		padding: 14px 21px 13px;
 		border-radius: 2px;
 		font-weight: 500;
 		font-size: 20px;
 		color: #fff;
 		background: $primary;
+		transition: 0.2s all 0s ease;
+
+		&:hover {
+			top: -2px;
+		}
 	}
 	&__img {
 		flex: 0 0 auto;
